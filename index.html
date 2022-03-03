@@ -6,9 +6,40 @@
     <title>Universal Links Demo</title>
   </head>
   <body>
-    <a href="sms:wired%40rbm.goog">Wired via RBM (no SMS fallback)</a>    
-    <a href="sms:;service_id=wired%40rbm.goog">Wired via RBM (SMS empty)</a>    
-    <a href="sms:+19542942294?service_id=wired%40rbm.goog">Wired via RBM</a>    
-    <a href="sms:+19542942294?service_id=wired_dqt%40botplatform.rcs.vodafone.com">Wired via Vodafone</a>
+    <br/>
+    <a href="sms:+19542942294">SMS only</a>    
+    <br/>
+    <a href="sms:+19542942294?body=hello">SMS only (with body)</a>    
+    <br/>
+
+    <br/>
+    <a href="sms:+19542942294?service_id=wired%40rbm.goog">SMS+RBM</a>    
+    <br/>
+    <a href="sms:+19542942294?service_id=wired%40rbm.goog&body=hello">SMS+RBM (with body)</a>    
+    <br/>
+
+    <br/>
+    <a href="sms:+19542942294;?service_id=wired%40rbm.goog">SMS+RBM (semi)</a>    
+    <br/>
+    <a href="sms:+19542942294;?service_id=wired%40rbm.goog&body=hello">SMS+RBM (semi, with body)</a>    
+    <br/>
+
+    <br/>
+    <a href="sms:wired%40rbm.goog">RBM only</a>    
+    <br/>
+    <a href="sms:wired%40rbm.goog?body=hello">RBM only (with body)</a>    
+    <br/>
+
+    <br/>
+    <a href="sms:?service_id=wired%40rbm.goog">RBM (SMS empty)</a>    
+    <br/>
+    <a href="sms:?service_id=wired%40rbm.goog&body=hello">RBM (SMS empty, with body)</a>    
+    <br/>
+
+    <br/>
+    <a href="sms:;service_id=wired%40rbm.goog&body=hello">RBM (SMS empty with semicolon, with body)</a>    
+    <br/>
+
+
   </body>
 </html>
